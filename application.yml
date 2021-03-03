@@ -1,0 +1,23 @@
+info:
+    description: "Spring Cloud Config Server - Repo"
+    url": https://github.com/erdemmercan/config-repo
+logging:
+  level:
+    mercan.cloud: INFO
+operator: AB_CD
+url: https://ab.cd@example.com
+lang: TR
+
+---
+spring:
+    profile: cloud
+logging:
+  level:
+    mercan.cloud: WARN
+
+---
+spring:
+    profile: debug
+logging:
+  level:
+    mercan.cloud: debug
